@@ -1,0 +1,63 @@
+name: webview
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.1.1+6 # ここでバージョンを設定できます。 
+#1.0.0はバージョン、+2はビルド番号です。
+#大規模な変更があった場合は1.0.0→2.0.0とすることが多いです。
+#中規模な変更があった場合は1.0.0→1.1.0とすることが多いです。
+#小規模な変更(メンテ)があった場合は1.0.0→1.0.1とすることが多いです。
+#ビルド番号はビルドするたびに増えていきます。
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  #webviewするためのパッケージ2つ
+  webview_flutter: ^2.0.0
+  flutter_inappwebview: ^5.3.2
+  #UIを整えるためのパッケージ
+  settings_ui: ^2.0.2
+  #URLを開くためのパッケージ
+  url_launcher: ^6.0.12 
+  #アイコンを変更するためのパッケージ
+  flutter_launcher_icons: ^0.9.2
+  cupertino_icons: ^1.0.2
+  #バックエンドのfirebaseのパッケージ
+  # firebase_messaging: ^14.7.10
+  # firebase_core: ^2.24.2
+  #ボトムナビゲーションバーを整えるためのパッケージ
+  curved_navigation_bar: ^1.0.3
+  firebase_core: ^2.25.4
+  firebase_messaging: ^14.7.15
+  flutter_local_notifications: ^16.3.2
+
+
+  ############################################################
+  #上記のようにパッケージを追加していくことができます。
+  #パッケージを追加したら、ターミナルでflutter pub getを実行してください。
+  #すると依存関係が解決され、pubspec.lockが更新されます。おまじないです。
+  #その後、flutter runでアプリを起動できます。
+
+  #追加する時は何のパッケージなのかをコメントで書いてもらえると助かります。
+  ############################################################
+
+
+#これは開発用のパッケージです。
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+
+#アイコンを変更するためのコード
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"  # ここでアイコンを設定できます。/assets/icon/にicon.pngを置いてください。
